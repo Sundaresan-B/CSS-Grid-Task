@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid excercise</title>
+    <style>
+        .container{
+            border: px double;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+            height: 600px;
+            display: grid;
+            grid-template-areas: "i1 i1 i1"
+                                 "i2 i3 i4"
+                                 "i2 i5 i5"
+                                 "i6 i6 i7"
+                                 "i8 i8 i8" ;
+            
+        }
+        body{
+        margin: 0%;
+        padding: 0%;
+    }
+
+        .container > div{
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: ivory;
+            margin-bottom: 5px;
+        }
+        .item1{
+            border: 1px solid;
+            background-color: coral;
+            grid-area: i1;
+            font-size:larger;
+        }
+        .item2{
+            border: 1px solid;
+            grid-area: i2;
+            background-color: blueviolet;
+        }
+        .item3{
+            border: 1px solid;
+            grid-area: i3;
+            background-color: chocolate;
+            margin-right: 5px;
+        }
+        .item4{
+            border: 1px solid;
+            grid-area: i4;
+            background-color: rgb(210, 30, 30);
+        }
+        .item5{
+            border: 1px solid;
+            grid-area: i5;
+            background-color: rgb(210, 30, 120);
+        }
+        .item6{
+            border: 1px solid;
+            grid-area: i6;
+            background-color: rgb(30, 189, 210);
+            margin-right: 5px;
+        }
+        .item7{
+            border: 1px solid;
+            grid-area: i7;
+            background-color: rgb(156, 210, 30);
+        }
+        .item8{
+            border: 1px solid;
+            grid-area: i8;
+            background-color: rgb(42, 30, 210);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item1" >1</div>
+    <div class="item2"> 2</div>
+    <div class="item3"> 3</div>
+    <div class="item4"> 4</div>
+    <div class="item5"> 5</div>
+    <div class="item6"> 6</div>
+    <div class="item7"> 7</div>
+    <div class="item8"> 8</div>
+</div>    
+</body>
+</html>
